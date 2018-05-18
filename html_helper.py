@@ -51,7 +51,7 @@ class HTMLHelper:
             html += '<div id="error">Unrecognized Method of Classfication, please choose one from above.</div>'
         html += '''
     </div>
-    <div id='ft'><h1>by absdoggy,hemant,punyedeep<h1></div>
+    <div id='ft'><i>by absdoggy,hemant,punyedeep</i></div>
     <script type="text/javascript">
     function checkEmpty(f) {
         if (f.keyword.value === "") {
