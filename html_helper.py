@@ -51,7 +51,18 @@ class HTMLHelper:
             html += '<div id="error">Unrecognized Method of Classfication, please choose one from above.</div>'
         html += '''
     </div>
-    <div id='ft'><i>by absdoggy,hemant,punyedeep</i></div>
+    <style>
+    .blink_me {
+  animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+</style>
+        <div id='ft' class="blink_me"><i><h3>by absdoggy , hemant and punyedeep</h3><i></div>
     <script type="text/javascript">
     function checkEmpty(f) {
         if (f.keyword.value === "") {
@@ -64,7 +75,7 @@ class HTMLHelper:
     }
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-31119754-1']);
-    _gaq.push(['_trackPageview']);
+        _gaq.push(['_trackPageview']);
     
     (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
